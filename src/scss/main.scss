@@ -4,6 +4,8 @@
 @use 'base/reset';
 @use 'base/typography';
 @use 'base/utilities';
+@use 'components/announcement-bar';
+@use 'components/header';
 
 @include foundation.foundation-global-styles;
 @include foundation.foundation-xy-grid-classes;

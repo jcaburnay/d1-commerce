@@ -2,11 +2,54 @@ $primary-color: #2c3e50;
 $secondary-color: #3498db;
 $accent-color: #e74c3c;
 
+$color-yellow: #ffba00;
+$color-dark-gray: #222430;
+$color-navy: #2c3e50;
+$color-dark-blue: #002657;
+$color-slate: #434c6c;
+$color-charcoal: #2e302e;
+
 $white: #ffffff;
+$color-off-white: #fffaf6;
+$color-mint-light: #f5feff;
+$color-ice-blue: #eff7fa;
+
 $black: #000000;
 $gray-light: #f8f9fa;
 $gray: #6c757d;
 $gray-dark: #343a40;
+
+$bg-announcement: $color-yellow;
+$bg-header: $white;
+
+$text-primary: $color-dark-gray;
+$text-white: $white;
+$text-black: $black;
+
+$font-family-base:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+$font-family-mono: "Roboto Mono", monospace;
+$font-family-heading: $font-family-base;
+
+$font-size-base: 1rem;
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-md: 16px;
+$font-size-lg: 18px;
+$font-size-xl: 24px;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+$line-height-base: 1.5;
+$line-height-tight: 1.2;
+$line-height-loose: 1.75;
+
+$letter-spacing-tight: -0.02em;
+$letter-spacing-normal: 0;
+$letter-spacing-wide: 0.05em;
 
 $spacer: 1rem;
 $spacing-sm: $spacer * 0.5;
@@ -14,11 +57,8 @@ $spacing-md: $spacer;
 $spacing-lg: $spacer * 2;
 $spacing-xl: $spacer * 4;
 
-$font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-$font-size-base: 1rem;
-$line-height-base: 1.5;
-
 $border-radius: 0.25rem;
+$border-radius-full: 50px;
 $border-color: #dee2e6;
 
 $transition-base: all 0.3s ease;

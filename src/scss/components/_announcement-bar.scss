@@ -1,0 +1,18 @@
+@use "../abstracts/variables" as vars;
+
+.announcement-bar {
+    background-color: vars.$bg-announcement;
+    height: 27px;
+
+    p {
+        margin: 0;
+        color: vars.$color-dark-gray;
+        font-family: vars.$font-family-mono;
+        font-size: vars.$font-size-xs;
+        font-weight: vars.$font-weight-bold;
+        letter-spacing: 0.33px;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: vars.$line-height-tight;
+    }
+}

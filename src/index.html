@@ -1,63 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="D1 Commerce - eCommerce Homepage">
-  <title>D1 Commerce</title>
-</head>
-<body>
-
-  <header class="header">
-    <nav class="navbar">
-      <div class="grid-container">
-        <div class="grid-x grid-padding-x align-middle">
-          <div class="cell shrink">
-            <a href="/" class="navbar__logo">
-              <h1>D1 Commerce</h1>
-            </a>
-          </div>
-          <div class="cell auto show-for-large">
-            <ul class="menu align-center">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-          <div class="cell shrink">
-            <button class="button primary">Cart</button>
-          </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="D1 Commerce - eCommerce Homepage" />
+        <title>D1 Commerce</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="announcement-bar flex-container align-center align-middle">
+            <p>FREE SHIPPING ON US ORDERS OVER $100</p>
         </div>
-      </div>
-    </nav>
-  </header>
 
-  <main id="main-content">
-    
-    <section class="hero section">
-      <div class="grid-container">
-        <div class="grid-x grid-padding-x align-center text-center">
-          <div class="cell large-8">
-            <h2>Welcome to D1 Commerce</h2>
-            <p>Your one-stop shop for amazing products</p>
-            <button class="button large primary">Shop Now</button>
-          </div>
-        </div>
-      </div>
-    </section>
+        <header class="header flex-container align-middle">
+            <nav
+                class="navbar__container flex-container align-middle align-justify"
+            >
+                <div class="navbar__left flex-container align-middle">
+                    <button
+                        class="navbar__menu-toggle flex-container align-middle align-center"
+                        aria-label="Toggle menu"
+                    >
+                        <img src="./images/icons/menu.svg" alt="Menu" />
+                    </button>
+                    <a href="/" class="navbar__logo">
+                        <img
+                            src="./images/logos/d1-logo.svg"
+                            alt="D1"
+                            class="navbar__logo-img"
+                        />
+                    </a>
+                </div>
+                <div class="navbar__right flex-container align-middle">
+                    <button
+                        class="navbar__cta flex-container align-middle align-center"
+                    >
+                        GET STARTED
+                    </button>
+                    <button
+                        class="navbar__cart flex-container align-middle align-center"
+                        aria-label="Shopping cart"
+                    >
+                        <img src="./images/icons/cart.png" alt="Cart" />
+                        <span class="navbar__cart-badge">1</span>
+                    </button>
+                </div>
+            </nav>
+        </header>
 
-  </main>
+        <main id="main-content">
+            <section class="hero section">
+                <div class="grid-container">
+                    <div class="grid-x grid-padding-x align-center text-center">
+                        <div class="cell large-8">
+                            <h2>Welcome to D1 Commerce</h2>
+                            <p>Your one-stop shop for amazing products</p>
+                            <button class="button large primary">
+                                Shop Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-  <footer class="footer">
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x">
-        <div class="cell text-center">
-          <p>&copy; 2024 D1 Commerce. All rights reserved.</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-</body>
+        <footer class="footer">
+            <div class="grid-container">
+                <div class="grid-x grid-padding-x">
+                    <div class="cell text-center">
+                        <p>&copy; 2024 D1 Commerce. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
