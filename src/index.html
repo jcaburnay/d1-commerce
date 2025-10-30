@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Roboto+Mono:wght@400;700&display=swap"
             rel="stylesheet"
         />
     </head>
@@ -38,7 +38,7 @@
                 </div>
                 <div class="navbar__right flex-container align-middle">
                     <button
-                        class="navbar__cta flex-container align-middle align-center"
+                        class="navbar__cta flex-container align-middle align-center hide-for-small-only"
                     >
                         GET STARTED
                     </button>
@@ -54,15 +54,71 @@
         </header>
 
         <main id="main-content">
-            <section class="hero section">
-                <div class="grid-container">
-                    <div class="grid-x grid-padding-x align-center text-center">
-                        <div class="cell large-8">
-                            <h2>Welcome to D1 Commerce</h2>
-                            <p>Your one-stop shop for amazing products</p>
-                            <button class="button large primary">
-                                Shop Now
-                            </button>
+            <section class="hero">
+                <div class="hero__content flex-container flex-dir-column">
+                    <h1 class="text-uppercase">SKINCARE FOR GUYS THAT AREN'T INTO SKINCARE</h1>
+                    <p class="text-uppercase">TRY THE ONE MINUTE SKINCARE ROUTINE</p>
+                    <button class="hero__cta text-uppercase">TRY TODAY!</button>
+
+                    <div class="hero__testimonial hero__testimonial--desktop show-for-large">
+                        <div class="hero__rating">
+                            <img
+                                src="./images/hero/yellow-stars.svg"
+                                alt="5 stars"
+                                class="hero__stars"
+                            />
+                        </div>
+                        <blockquote class="hero__quote">
+                            "I LOVE THIS STUFF, IT TOTALLY CHANGED THE
+                            GAME FOR ME"
+                        </blockquote>
+                        <div
+                            class="hero__customer flex-container align-middle"
+                        >
+                            <img
+                                src="./images/hero/ps.png"
+                                alt="P.S"
+                                class="hero__customer-avatar"
+                            />
+                            <span class="hero__customer-name"
+                                >PETER S.</span
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__products">
+                    <img
+                        src="./images/hero/products.png"
+                        alt="D1 Products"
+                        class="hero__products-img"
+                    />
+                </div>
+
+                <div class="hero__review hide-for-large">
+                    <div class="hero__testimonial hero__testimonial--mobile">
+                        <div class="hero__rating">
+                            <img
+                                src="./images/hero/yellow-stars.svg"
+                                alt="5 stars"
+                                class="hero__stars"
+                            />
+                        </div>
+                        <blockquote class="hero__quote">
+                            "I LOVE THIS STUFF, IT TOTALLY CHANGED THE
+                            GAME FOR ME"
+                        </blockquote>
+                        <div
+                            class="hero__customer flex-container align-middle"
+                        >
+                            <img
+                                src="./images/hero/ps.png"
+                                alt="P.S"
+                                class="hero__customer-avatar"
+                            />
+                            <span class="hero__customer-name"
+                                >PETER S.</span
+                            >
                         </div>
                     </div>
                 </div>

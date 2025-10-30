@@ -8,6 +8,8 @@ $color-navy: #2c3e50;
 $color-dark-blue: #002657;
 $color-slate: #434c6c;
 $color-charcoal: #2e302e;
+$color-slate-blue: rgba(70, 78, 112, 1);
+$color-deep-teal: rgba(32, 55, 70, 1);
 
 $white: #ffffff;
 $color-off-white: #fffaf6;
@@ -29,6 +31,7 @@ $text-black: $black;
 $font-family-base:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 $font-family-mono: "Roboto Mono", monospace;
+$font-family-display: "Inter", sans-serif;
 $font-family-heading: $font-family-base;
 
 $font-size-base: 1rem;
@@ -37,11 +40,13 @@ $font-size-sm: 14px;
 $font-size-md: 16px;
 $font-size-lg: 18px;
 $font-size-xl: 24px;
+$font-size-xxl: 64px;
 
 $font-weight-regular: 400;
 $font-weight-medium: 500;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;
+$font-weight-black: 900;
 
 $line-height-base: 1.5;
 $line-height-tight: 1.2;

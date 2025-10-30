@@ -6,6 +6,7 @@
 @use 'base/utilities';
 @use 'components/announcement-bar';
 @use 'components/header';
+@use 'components/hero';
 
 @include foundation.foundation-global-styles;
 @include foundation.foundation-xy-grid-classes;
