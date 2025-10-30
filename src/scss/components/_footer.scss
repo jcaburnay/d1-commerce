@@ -29,8 +29,6 @@
         margin-bottom: 29px;
 
         @media screen and (max-width: 639px) {
-            flex-direction: column;
-            align-items: flex-start;
             gap: 30px;
         }
     }
@@ -72,7 +70,7 @@
         font-family: vars.$font-family-mono !important;
         font-size: vars.$font-size-md !important;
         font-weight: vars.$font-weight-regular !important;
-        color: rgba(67, 76, 108, 0.5) !important;
+        color: vars.$color-slate !important;
         margin: 0 !important;
         box-shadow: none !important;
         appearance: none !important;
@@ -80,7 +78,8 @@
         -moz-appearance: none !important;
 
         &::placeholder {
-            color: rgba(67, 76, 108, 0.5) !important;
+            color: vars.$color-slate !important;
+            opacity: 0.5 !important;
         }
 
         &:focus {
@@ -151,7 +150,6 @@
         }
 
         @media screen and (max-width: 639px) {
-            flex-direction: column;
             gap: 40px;
             margin-bottom: 60px;
         }
@@ -171,10 +169,6 @@
     }
 
     &__links-list {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-
         li {
             margin-bottom: 4px;
 
@@ -201,8 +195,6 @@
     // Bottom Section
     &__bottom {
         @media screen and (max-width: 639px) {
-            flex-direction: column;
-            align-items: flex-start;
             gap: 30px;
         }
     }
