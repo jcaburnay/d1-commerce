@@ -1,0 +1,310 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mix;
+
+.reviews {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 108px 19px 117px;
+    background-color: vars.$color-ice-blue;
+
+    @media screen and (max-width: 1023px) {
+        padding: 60px 40px;
+    }
+
+    @media screen and (max-width: 639px) {
+        padding: 40px 20px;
+    }
+
+    &__title {
+        color: vars.$color-charcoal;
+        font-family: vars.$font-family-display;
+        font-size: 50px;
+        font-weight: vars.$font-weight-black;
+        letter-spacing: -0.83px;
+        line-height: 1.04;
+        margin: 0 0 43px 0;
+
+        @media screen and (max-width: 639px) {
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__carousel {
+        display: flex;
+        justify-content: space-around;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        margin-bottom: 158px;
+
+        @media screen and (max-width: 639px) {
+            gap: 20px;
+        }
+    }
+
+    &__card {
+        position: relative;
+        flex: 0 0 auto;
+        width: 332px;
+        height: 558px;
+        border: 1.5px solid rgba(0, 38, 87, 1);
+        border-radius: 30px;
+        overflow: hidden;
+
+        @media screen and (max-width: 639px) {
+            width: 280px;
+            height: 470px;
+        }
+    }
+
+    &__video {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: vars.$color-dark-gray;
+    }
+
+    &__thumbnail {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__fpo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        color: rgba(255, 255, 255, 0.5);
+        font-family: vars.$font-family-mono;
+        font-size: vars.$font-size-xs;
+        font-weight: vars.$font-weight-regular;
+        pointer-events: none;
+    }
+
+    &__mute {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background-color: vars.$white;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: vars.$transition-base;
+
+        &:hover {
+            opacity: 0.9;
+        }
+
+        img {
+            width: 38px;
+            height: 38px;
+        }
+    }
+
+    &__play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: vars.$white;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: vars.$transition-base;
+
+        &:hover {
+            opacity: 0.9;
+            transform: translate(-50%, -50%) scale(1.05);
+        }
+
+        img {
+            width: 68px;
+            height: 68px;
+        }
+    }
+
+    &__content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 15px 18px 18px 18px;
+        background-color: vars.$white;
+        border-radius: 25px;
+        margin: 12px;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    &__info {
+        flex: 1;
+    }
+
+    &__rating {
+        margin-bottom: 5px;
+
+        img {
+            width: auto;
+            height: 10px;
+        }
+    }
+
+    &__product-name {
+        color: vars.$color-dark-blue;
+        font-family: vars.$font-family-display;
+        font-size: 15px;
+        font-weight: vars.$font-weight-semibold;
+        line-height: 1.1;
+        margin: 0 0 4px 0;
+    }
+
+    &__price {
+        color: vars.$color-charcoal;
+        font-family: vars.$font-family-mono;
+        font-size: 14px;
+        font-weight: vars.$font-weight-regular;
+        line-height: 1;
+        margin: 0;
+    }
+
+    &__add-button {
+        background-color: vars.$color-dark-gray;
+        color: vars.$white;
+        font-family: vars.$font-family-mono;
+        font-size: vars.$font-size-lg;
+        font-weight: vars.$font-weight-regular;
+        padding: 14px 35px;
+        border: none;
+        border-radius: 35px;
+        cursor: pointer;
+        transition: vars.$transition-base;
+        text-transform: uppercase;
+        line-height: 1;
+        flex-shrink: 0;
+        align-self: center;
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
+    // Get The Set CTA
+    &__cta {
+        gap: 80px;
+        padding: 0 88px;
+
+        @media screen and (max-width: 1023px) {
+            gap: 40px;
+            padding: 0 40px;
+        }
+
+        @media screen and (max-width: 639px) {
+            flex-direction: column;
+            gap: 30px;
+            padding: 0 20px;
+        }
+    }
+
+    &__cta-content {
+        flex: 1;
+        max-width: 540px;
+    }
+
+    &__cta-subtitle {
+        color: vars.$color-slate;
+        font-family: vars.$font-family-mono;
+        font-size: vars.$font-size-lg;
+        font-weight: vars.$font-weight-regular;
+        margin: 0 0 15px 0;
+    }
+
+    &__cta-title {
+        color: vars.$color-charcoal;
+        font-family: vars.$font-family-display;
+        font-size: 50px;
+        font-weight: vars.$font-weight-black;
+        letter-spacing: -0.83px;
+        line-height: 1.04;
+        margin: 0 0 33px 0;
+
+        @media screen and (max-width: 639px) {
+            font-size: 40px;
+        }
+    }
+
+    &__cta-description {
+        max-width: 357px;
+        color: vars.$color-slate;
+        font-family: vars.$font-family-mono;
+        font-size: vars.$font-size-lg;
+        font-weight: vars.$font-weight-regular;
+        line-height: 1.33;
+        margin: 0 0 29px 0;
+    }
+
+    &__cta-list {
+        list-style: none;
+        margin: 0 0 40px 0;
+        padding: 0;
+    }
+
+    &__cta-list-item {
+        gap: 12px;
+        padding-bottom: 6px;
+        margin-bottom: 6px;
+        border-bottom: 2px solid rgba(0, 38, 87, 0.1);
+
+        &:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+
+        span {
+            color: vars.$color-slate;
+            font-family: vars.$font-family-mono;
+            font-size: vars.$font-size-md;
+            font-weight: vars.$font-weight-regular;
+            line-height: 1.5;
+        }
+    }
+
+    &__cta-list-icon {
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+    }
+
+    &__cta-button {
+        max-width: 393px;
+        background-color: vars.$color-dark-gray;
+        color: vars.$white;
+        font-family: vars.$font-family-mono;
+        font-size: vars.$font-size-lg;
+        font-weight: vars.$font-weight-regular;
+        padding: 20px 40px;
+        border: none;
+        border-radius: 35px;
+        cursor: pointer;
+        transition: vars.$transition-base;
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
+    &__cta-image {
+        flex: 1;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

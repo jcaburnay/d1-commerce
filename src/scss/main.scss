@@ -12,6 +12,7 @@
 @use 'components/product';
 @use 'components/ingredients';
 @use 'components/formulas';
+@use 'components/reviews';
 
 @include foundation.foundation-global-styles;
 @include foundation.foundation-xy-grid-classes;
