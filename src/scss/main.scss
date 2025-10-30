@@ -11,6 +11,7 @@
 @use 'components/benefits';
 @use 'components/product';
 @use 'components/ingredients';
+@use 'components/formulas';
 
 @include foundation.foundation-global-styles;
 @include foundation.foundation-xy-grid-classes;

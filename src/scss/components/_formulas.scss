@@ -1,0 +1,216 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mix;
+
+.formulas {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 137px 88px 106px 88px;
+    background-color: vars.$color-dark-gray;
+
+    @media screen and (max-width: 1023px) {
+        padding: 60px 40px;
+    }
+
+    @media screen and (max-width: 639px) {
+        padding: 40px 20px;
+    }
+
+    &__badge {
+        display: inline-block;
+        background-color: vars.$color-yellow;
+        border-radius: 28.5px;
+        padding: 5px 28px 8px 22px;
+        margin-bottom: 65px;
+
+        span {
+            color: vars.$color-charcoal;
+            font-family: vars.$font-family-mono;
+            font-size: vars.$font-size-lg;
+            line-height: 1.33;
+            font-weight: vars.$font-weight-regular;
+        }
+    }
+
+    &__title {
+        color: vars.$color-off-white;
+        font-family: vars.$font-family-display;
+        font-size: 80px;
+        font-weight: vars.$font-weight-black;
+        line-height: 0.65;
+        letter-spacing: -1.33px;
+        margin-bottom: 21px;
+
+        @media screen and (max-width: 639px) {
+            font-size: 40px;
+        }
+    }
+
+    &__subtitle {
+        max-width: 303px;
+        height: 24px;
+        margin: 0 auto;
+        color: vars.$white;
+        font-family: vars.$font-family-mono;
+        font-size: vars.$font-size-lg;
+        font-weight: vars.$font-weight-regular;
+        margin-bottom: 108px;
+    }
+
+    &__subtitle-underline {
+        text-decoration: underline;
+    }
+
+    &__product {
+        gap: 142px;
+
+        @media screen and (max-width: 1023px) {
+            gap: 40px;
+        }
+
+        @media screen and (max-width: 639px) {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        &--reverse {
+            @media screen and (min-width: 640px) {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+
+    &__product-content {
+        max-width: 366px;
+    }
+
+    &__product-title {
+        color: vars.$white;
+        font-family: vars.$font-family-display;
+        font-size: 50px;
+        font-weight: vars.$font-weight-black;
+        line-height: 1.04;
+        margin: 0 0 18px 0;
+
+        @media screen and (max-width: 639px) {
+            font-size: 32px;
+        }
+    }
+
+    &__product-description {
+        color: vars.$white;
+        font-family: vars.$font-family-mono;
+        font-size: vars.$font-size-md;
+        font-weight: vars.$font-weight-regular;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    &__product-image {
+        img {
+            max-width: 100%;
+        }
+    }
+
+    // Testimonials
+    &__testimonials {
+        margin-top: 120px;
+
+        @media screen and (max-width: 639px) {
+            margin-top: 60px;
+        }
+    }
+
+    &__testimonials-title {
+        color: vars.$color-yellow;
+        font-family: vars.$font-family-mono;
+        font-size: vars.$font-size-lg;
+        font-weight: vars.$font-weight-regular;
+        margin-bottom: 58px;
+
+        @media screen and (max-width: 639px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__testimonials-grid {
+        gap: 25px;
+
+        @media screen and (max-width: 1023px) {
+            flex-wrap: wrap;
+        }
+
+        @media screen and (max-width: 639px) {
+            flex-direction: column;
+        }
+    }
+
+    &__testimonial {
+        display: flex;
+        flex-direction: column;
+        background-color: vars.$color-off-white;
+        border-radius: 39px;
+        padding: 28px 21px 19px 28px;
+        max-width: 380px;
+
+        @media screen and (max-width: 1023px) {
+            flex: 1 1 calc(50% - 20px);
+        }
+
+        @media screen and (max-width: 639px) {
+            flex: 1 1 100%;
+            max-width: 100%;
+        }
+    }
+
+    &__testimonial-stars {
+        margin-bottom: 15px;
+    }
+
+    &__testimonial-text {
+        flex: 1;
+        color: vars.$color-slate;
+        font-family: vars.$font-family-mono;
+        font-size: vars.$font-size-md;
+        font-weight: vars.$font-weight-regular;
+        line-height: 1.25;
+        margin: 0 0 40px 0;
+    }
+
+    &__testimonial-author {
+        gap: 10px;
+    }
+
+    &__testimonial-avatar {
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        background-color: vars.$white;
+        border: 2px solid vars.$color-charcoal;
+        flex-shrink: 0;
+        color: vars.$color-charcoal;
+        font-family: vars.$font-family-display;
+        font-size: 24px;
+        font-weight: vars.$font-weight-medium;
+    }
+
+    &__testimonial-info {
+        flex: 1;
+    }
+
+    &__testimonial-name {
+        color: vars.$color-charcoal;
+        font-family: vars.$font-family-display;
+        font-size: 15px;
+        font-weight: vars.$font-weight-semibold;
+        margin: 0 0 5px 0;
+    }
+
+    &__testimonial-title {
+        color: vars.$color-slate;
+        font-family: vars.$font-family-mono;
+        font-size: vars.$font-size-xs;
+        font-weight: vars.$font-weight-regular;
+        opacity: 0.6;
+        margin: 0;
+    }
+}
