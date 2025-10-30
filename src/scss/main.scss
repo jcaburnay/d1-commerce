@@ -1,0 +1,16 @@
+@use 'abstracts/variables' as vars;
+@use 'abstracts/mixins' as mix;
+@use 'vendors/foundation-settings' as foundation;
+@use 'base/reset';
+@use 'base/typography';
+@use 'base/utilities';
+
+@include foundation.foundation-global-styles;
+@include foundation.foundation-xy-grid-classes;
+@include foundation.foundation-typography;
+@include foundation.foundation-button;
+@include foundation.foundation-forms;
+@include foundation.foundation-visibility-classes;
+@include foundation.foundation-flex-classes;
+
+@import 'flickity/css/flickity.css';

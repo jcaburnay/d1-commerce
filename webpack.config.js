@@ -52,6 +52,7 @@ module.exports = {
               sourceMap: isDevelopment,
               sassOptions: {
                 outputStyle: isDevelopment ? 'expanded' : 'compressed',
+                quietDeps: true,
               },
             },
           },

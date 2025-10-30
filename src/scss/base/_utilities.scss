@@ -1,0 +1,29 @@
+@use '../abstracts/variables' as vars;
+
+.d-none { display: none !important; }
+.d-block { display: block !important; }
+.d-flex { display: flex !important; }
+
+.text-center { text-align: center !important; }
+.text-left { text-align: left !important; }
+.text-right { text-align: right !important; }
+
+.mt-1 { margin-top: vars.$spacing-sm !important; }
+.mt-2 { margin-top: vars.$spacing-md !important; }
+.mt-3 { margin-top: vars.$spacing-lg !important; }
+
+.mb-1 { margin-bottom: vars.$spacing-sm !important; }
+.mb-2 { margin-bottom: vars.$spacing-md !important; }
+.mb-3 { margin-bottom: vars.$spacing-lg !important; }
+
+.pt-1 { padding-top: vars.$spacing-sm !important; }
+.pt-2 { padding-top: vars.$spacing-md !important; }
+.pt-3 { padding-top: vars.$spacing-lg !important; }
+
+.pb-1 { padding-bottom: vars.$spacing-sm !important; }
+.pb-2 { padding-bottom: vars.$spacing-md !important; }
+.pb-3 { padding-bottom: vars.$spacing-lg !important; }
+
+.section {
+  padding: vars.$spacing-xl 0;
+}

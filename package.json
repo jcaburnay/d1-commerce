@@ -15,8 +15,13 @@
     "type": "git",
     "url": "git+https://github.com/jcaburnay/d1-commerce.git"
   },
-  "keywords": ["ecommerce", "foundation", "scss", "responsive"],
-  "author": "Your Name",
+  "keywords": [
+    "ecommerce",
+    "foundation",
+    "scss",
+    "responsive"
+  ],
+  "author": "Jonathan Caburnay",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jcaburnay/d1-commerce/issues"
