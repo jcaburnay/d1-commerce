@@ -13,6 +13,7 @@
 @use 'components/ingredients';
 @use 'components/formulas';
 @use 'components/reviews';
+@use 'components/footer';
 
 @include foundation.foundation-global-styles;
 @include foundation.foundation-xy-grid-classes;
