@@ -1,0 +1,151 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mix;
+
+.product {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 80px 88px 0 88px;
+    background-color: vars.$white;
+
+    @media screen and (max-width: 1023px) {
+        padding: 60px 40px;
+    }
+
+    @media screen and (max-width: 639px) {
+        padding: 40px 20px;
+    }
+
+    &__badge {
+        display: inline-block;
+        background-color: vars.$color-yellow;
+        border-radius: 28.5px;
+        padding: 5px 19px 8px 13px;
+        margin-bottom: 28px;
+
+        span {
+            color: vars.$color-charcoal;
+            font-family: vars.$font-family-mono;
+            font-size: vars.$font-size-lg;
+            line-height: 1.33;
+            font-weight: vars.$font-weight-regular;
+        }
+    }
+
+    &__container {
+        gap: 70px;
+        margin-bottom: 68px;
+
+        &--mobile {
+            gap: 40px;
+            margin-bottom: 68px;
+        }
+    }
+
+    &__content {
+        flex: 1;
+    }
+
+    &__title {
+        color: vars.$color-charcoal;
+        font-family: vars.$font-family-display;
+        font-size: 50px;
+        font-weight: vars.$font-weight-black;
+        letter-spacing: -0.83px;
+        line-height: 1.04;
+        margin: 0 0 24px 0;
+
+        @media screen and (max-width: 639px) {
+            font-size: 40px;
+        }
+    }
+
+    &__description {
+        max-width: 467px;
+        color: vars.$color-charcoal;
+        font-family: vars.$font-family-mono;
+        font-size: vars.$font-size-lg;
+        font-weight: vars.$font-weight-regular;
+        line-height: 1.33;
+        padding: 0 0 25px 0;
+        margin-bottom: 23px;
+        border-bottom: 2px solid rgba(29, 60, 52, 0.1);
+    }
+
+    &__list {
+        list-style: none;
+        margin: 0 0 29px 0;
+        padding: 0;
+    }
+
+    &__list-item {
+        gap: 13px;
+        margin-bottom: 24px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        span {
+            color: vars.$color-charcoal;
+            font-family: vars.$font-family-mono;
+            font-size: vars.$font-size-lg;
+            font-weight: vars.$font-weight-regular;
+            line-height: vars.$line-height-base;
+        }
+    }
+
+    &__list-icon {
+        width: 22px;
+        height: 19px;
+        flex-shrink: 0;
+    }
+
+    &__button {
+        background-color: vars.$color-dark-gray;
+        color: vars.$white;
+        font-family: vars.$font-family-mono;
+        font-size: vars.$font-size-lg;
+        font-weight: vars.$font-weight-regular;
+        padding: 19px 31px 22px 41px;
+        border: none;
+        border-radius: vars.$border-radius-full;
+        cursor: pointer;
+        transition: vars.$transition-base;
+        gap: 26px;
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
+    &__price {
+        color: vars.$white;
+    }
+
+    &__price-old {
+        text-decoration: line-through;
+        opacity: 0.6;
+    }
+
+    &__image-container {
+        flex: 1;
+    }
+
+    &__image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    &__divider {
+        border: 1px solid vars.$color-charcoal;
+        margin: 0 -88px;
+
+        @media screen and (max-width: 1023px) {
+            margin: 0 -40px;
+        }
+
+        @media screen and (max-width: 639px) {
+            margin: 0 -20px;
+        }
+    }
+}
