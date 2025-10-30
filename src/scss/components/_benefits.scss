@@ -1,0 +1,188 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mix;
+
+.benefits {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 88px;
+    background-color: vars.$color-ice-blue;
+
+    @media screen and (max-width: 1023px) {
+        padding: 0 40px 60px 40px;
+    }
+
+    @media screen and (max-width: 639px) {
+        padding: 0 20px 40px 20px;
+    }
+
+    &__marquee {
+        overflow: hidden;
+        padding: 30px 0;
+        margin: 0 -88px 60px -88px;
+
+        @media screen and (max-width: 1023px) {
+            margin: 0 -40px 60px -40px;
+        }
+
+        @media screen and (max-width: 639px) {
+            margin: 0 -20px 40px -20px;
+        }
+    }
+
+    &__marquee-track {
+        display: flex;
+        width: fit-content;
+        animation: scroll 30s linear infinite;
+    }
+
+    &__marquee-content {
+        display: flex;
+        gap: 33px;
+        flex-shrink: 0;
+        padding-right: 33px;
+    }
+
+    &__marquee-item {
+        gap: 9px;
+        white-space: nowrap;
+
+        img {
+            width: 22px;
+            height: 19px;
+            flex-shrink: 0;
+        }
+
+        span {
+            color: vars.$color-charcoal;
+            font-family: vars.$font-family-display;
+            font-size: 20px;
+            font-weight: vars.$font-weight-black;
+        }
+    }
+
+    &__header {
+        margin-bottom: 51px;
+    }
+
+    &__title {
+        max-width: 532px;
+        color: vars.$color-charcoal;
+        font-family: vars.$font-family-display;
+        font-size: 50px;
+        font-weight: vars.$font-weight-black;
+        letter-spacing: -0.83px;
+        line-height: 1.04;
+        margin: 0 0 15px 0;
+
+        @media screen and (max-width: 639px) {
+            font-size: 40px;
+        }
+    }
+
+    &__subtitle {
+        color: vars.$color-charcoal;
+        font-family: vars.$font-family-mono;
+        font-size: vars.$font-size-lg;
+        font-weight: vars.$font-weight-regular;
+        margin: 0;
+    }
+
+    &__grid {
+        gap: 85px;
+        margin-bottom: 98px;
+
+        @media screen and (max-width: 1023px) {
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        @media screen and (max-width: 639px) {
+            flex-direction: column;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__card {
+        flex: 1;
+        min-width: 300px;
+
+        @media screen and (max-width: 1023px) {
+            flex: 1 1 calc(50% - 20px);
+        }
+
+        @media screen and (max-width: 639px) {
+            flex: 1 1 100%;
+        }
+    }
+
+    &__card-image {
+        width: 364px;
+        height: 364px;
+        border-radius: 19px;
+        overflow: hidden;
+        margin-bottom: 33px;
+
+        @media screen and (max-width: 1023px) {
+            width: 100%;
+            height: 300px;
+        }
+
+        @media screen and (max-width: 639px) {
+            width: 100%;
+            height: 300px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__card-title {
+        color: vars.$color-charcoal;
+        font-family: vars.$font-family-display;
+        font-size: vars.$font-size-xl;
+        font-weight: vars.$font-weight-black;
+        line-height: 0.957;
+        min-height: 46px;
+        margin: 0 0 20px 0;
+
+        @media screen and (max-width: 639px) {
+            min-height: auto;
+        }
+    }
+
+    &__card-description {
+        color: vars.$color-charcoal;
+        font-family: vars.$font-family-mono;
+        font-size: vars.$font-size-md;
+        font-weight: vars.$font-weight-regular;
+        line-height: vars.$line-height-base;
+        margin: 0;
+    }
+
+    &__divider {
+        border: 1px solid vars.$color-charcoal;
+        margin: 0 -88px 0 -88px;
+
+        @media screen and (max-width: 1023px) {
+            margin: 0 -40px 0 -40px;
+        }
+
+        @media screen and (max-width: 639px) {
+            margin: 0 -20px 0 -20px;
+        }
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

@@ -8,6 +8,7 @@
 @use 'components/header';
 @use 'components/hero';
 @use 'components/features';
+@use 'components/benefits';
 
 @include foundation.foundation-global-styles;
 @include foundation.foundation-xy-grid-classes;
