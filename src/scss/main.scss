@@ -10,6 +10,7 @@
 @use 'components/features';
 @use 'components/benefits';
 @use 'components/product';
+@use 'components/ingredients';
 
 @include foundation.foundation-global-styles;
 @include foundation.foundation-xy-grid-classes;
