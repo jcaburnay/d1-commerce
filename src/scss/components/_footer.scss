@@ -5,7 +5,7 @@
     position: relative;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 80px 88px 40px;
+    padding: 42px 88px 64px;
     background-color: vars.$color-dark-gray;
 
     @include mix.respond-to-tablet {
