@@ -8,11 +8,11 @@
     padding: 80px 88px 40px;
     background-color: vars.$color-dark-gray;
 
-    @media screen and (max-width: 1023px) {
+    @include mix.respond-to-tablet {
         padding: 60px 40px 40px;
     }
 
-    @media screen and (max-width: 639px) {
+    @include mix.respond-to-mobile {
         padding: 40px 20px 40px;
     }
 
@@ -20,7 +20,7 @@
     &__newsletter {
         margin-bottom: 51px;
 
-        @media screen and (max-width: 639px) {
+        @include mix.respond-to-mobile {
             margin-bottom: 60px;
         }
     }
@@ -28,7 +28,7 @@
     &__newsletter-header {
         margin-bottom: 29px;
 
-        @media screen and (max-width: 639px) {
+        @include mix.respond-to-mobile {
             gap: 30px;
         }
     }
@@ -145,11 +145,11 @@
         gap: 37px;
         margin-bottom: 53px;
 
-        @media screen and (max-width: 1023px) {
+        @include mix.respond-to-tablet {
             gap: 100px;
         }
 
-        @media screen and (max-width: 639px) {
+        @include mix.respond-to-mobile {
             gap: 40px;
             margin-bottom: 60px;
         }
@@ -194,7 +194,7 @@
 
     // Bottom Section
     &__bottom {
-        @media screen and (max-width: 639px) {
+        @include mix.respond-to-mobile {
             gap: 30px;
         }
     }
@@ -218,11 +218,11 @@
         border: 2px solid rgba(255, 255, 255, 0.1);
         border-radius: 10px;
 
-        @media screen and (max-width: 1023px) {
+        @include mix.respond-to-tablet {
             right: 40px;
         }
 
-        @media screen and (max-width: 639px) {
+        @include mix.respond-to-mobile {
             position: relative;
             bottom: auto;
             right: auto;

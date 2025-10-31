@@ -18,6 +18,12 @@
     }
 }
 
+@mixin respond-to-tablet-and-up {
+    @media screen and (min-width: 640px) {
+        @content;
+    }
+}
+
 @mixin respond-to-desktop {
     @media screen and (min-width: 1024px) {
         @content;

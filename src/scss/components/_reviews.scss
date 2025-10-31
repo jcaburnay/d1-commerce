@@ -7,25 +7,23 @@
     padding: 108px 19px 117px;
     background-color: vars.$color-ice-blue;
 
-    @media screen and (max-width: 1023px) {
+    @include mix.respond-to-tablet {
         padding: 60px 40px;
     }
 
-    @media screen and (max-width: 639px) {
+    @include mix.respond-to-mobile {
         padding: 40px 20px;
     }
 
     &__title {
+        @include mix.heading-display(
+            $size: vars.$font-size-xxl-2,
+            $responsive-size: vars.$font-size-xxl-5
+        );
         color: vars.$color-charcoal;
-        font-family: vars.$font-family-display;
-        font-size: 50px;
-        font-weight: vars.$font-weight-black;
-        letter-spacing: -0.83px;
-        line-height: 1.04;
         margin: 0 0 43px 0;
 
-        @media screen and (max-width: 639px) {
-            font-size: 40px;
+        @include mix.respond-to-mobile {
             margin-bottom: 40px;
         }
     }
@@ -38,7 +36,7 @@
         -webkit-overflow-scrolling: touch;
         margin-bottom: 158px;
 
-        @media screen and (max-width: 639px) {
+        @include mix.respond-to-mobile {
             gap: 20px;
         }
     }
@@ -49,10 +47,10 @@
         width: 332px;
         height: 558px;
         border: 1.5px solid vars.$color-dark-blue;
-        border-radius: 30px;
+        border-radius: vars.$border-radius-xl;
         overflow: hidden;
 
-        @media screen and (max-width: 639px) {
+        @include mix.respond-to-mobile {
             width: 280px;
             height: 470px;
         }
@@ -175,7 +173,7 @@
         font-weight: vars.$font-weight-regular;
         padding: 14px 35px;
         border: none;
-        border-radius: 35px;
+        border-radius: vars.$border-radius-xxl;
         cursor: pointer;
         transition: vars.$transition-base;
         line-height: 1;
@@ -192,12 +190,12 @@
         gap: 80px;
         padding: 0 88px;
 
-        @media screen and (max-width: 1023px) {
+        @include mix.respond-to-tablet {
             gap: 40px;
             padding: 0 40px;
         }
 
-        @media screen and (max-width: 639px) {
+        @include mix.respond-to-mobile {
             flex-direction: column;
             gap: 30px;
             padding: 0 20px;
@@ -218,17 +216,12 @@
     }
 
     &__cta-title {
+        @include mix.heading-display(
+            $size: vars.$font-size-xxl-2,
+            $responsive-size: vars.$font-size-xxl-5
+        );
         color: vars.$color-charcoal;
-        font-family: vars.$font-family-display;
-        font-size: 50px;
-        font-weight: vars.$font-weight-black;
-        letter-spacing: -0.83px;
-        line-height: 1.04;
         margin: 0 0 33px 0;
-
-        @media screen and (max-width: 639px) {
-            font-size: 40px;
-        }
     }
 
     &__cta-description {
@@ -251,7 +244,7 @@
         gap: 12px;
         padding-bottom: 6px;
         margin-bottom: 6px;
-        border-bottom: 2px solid rgba(0, 38, 87, 0.1);
+        border-bottom: 2px solid vars.$color-border-navy-light;
 
         &:last-child {
             margin-bottom: 0;
@@ -282,7 +275,7 @@
         font-weight: vars.$font-weight-regular;
         padding: 20px 40px;
         border: none;
-        border-radius: 35px;
+        border-radius: vars.$border-radius-xxl;
         cursor: pointer;
         transition: vars.$transition-base;
 

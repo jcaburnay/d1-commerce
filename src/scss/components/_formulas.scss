@@ -73,7 +73,7 @@
         }
 
         &--reverse {
-            @media screen and (min-width: 640px) {
+            @include mix.respond-to-tablet-and-up {
                 flex-direction: row-reverse;
             }
         }
