@@ -7,52 +7,38 @@
     padding: 99px 88px 194px 88px;
     background-color: vars.$color-ice-blue;
 
-    @media screen and (max-width: 1023px) {
+    @include mix.respond-to-tablet {
         padding: 60px 40px;
     }
 
-    @media screen and (max-width: 639px) {
+    @include mix.respond-to-mobile {
         padding: 40px 20px;
     }
 
     &__title {
+        @include mix.heading-display(
+            $size: vars.$font-size-xxl-2,
+            $responsive-size: vars.$font-size-xxl-5
+        );
         color: vars.$color-charcoal;
-        font-family: vars.$font-family-display;
-        font-size: 50px;
-        font-weight: vars.$font-weight-black;
-        letter-spacing: -0.83px;
-        line-height: 1.04;
         margin: 0 0 31px 0;
-
-        @media screen and (max-width: 639px) {
-            font-size: 40px;
-        }
     }
 
     &__button {
-        display: inline-block;
-        background-color: vars.$color-yellow;
-        color: vars.$color-charcoal;
-        font-family: vars.$font-family-mono;
-        font-size: vars.$font-size-lg;
-        font-weight: vars.$font-weight-regular;
-        padding: 19px 31px 22px 41px;
-        border: none;
-        border-radius: 35px;
-        cursor: pointer;
-        transition: vars.$transition-base;
+        @include mix.button-base(
+            $bg-color: vars.$color-yellow,
+            $text-color: vars.$color-charcoal,
+            $padding: 19px 31px 22px 41px,
+            $radius: vars.$border-radius-xxl
+        );
         margin-bottom: 56px;
-
-        &:hover {
-            opacity: 0.9;
-        }
     }
 
     &__grid {
         flex-wrap: wrap;
         gap: 40px;
 
-        @media screen and (max-width: 639px) {
+        @include mix.respond-to-mobile {
             flex-direction: column;
         }
     }
@@ -63,11 +49,11 @@
         gap: 20px;
         width: 342px;
 
-        @media screen and (max-width: 1023px) {
+        @include mix.respond-to-tablet {
             flex: 0 1 calc(50% - 20px);
         }
 
-        @media screen and (max-width: 639px) {
+        @include mix.respond-to-mobile {
             flex: 1 1 100%;
             width: 100%;
         }

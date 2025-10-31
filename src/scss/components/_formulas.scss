@@ -7,18 +7,18 @@
     padding: 137px 88px 106px 88px;
     background-color: vars.$color-dark-gray;
 
-    @media screen and (max-width: 1023px) {
+    @include mix.respond-to-tablet {
         padding: 60px 40px;
     }
 
-    @media screen and (max-width: 639px) {
+    @include mix.respond-to-mobile {
         padding: 40px 20px;
     }
 
     &__badge {
         display: inline-block;
         background-color: vars.$color-yellow;
-        border-radius: 28.5px;
+        border-radius: vars.$border-radius-lg;
         padding: 5px 28px 8px 22px;
         margin-bottom: 65px;
 
@@ -34,14 +34,14 @@
     &__title {
         color: vars.$color-off-white;
         font-family: vars.$font-family-display;
-        font-size: 80px;
+        font-size: vars.$font-size-xxxl;
         font-weight: vars.$font-weight-black;
-        line-height: 0.65;
-        letter-spacing: -1.33px;
+        line-height: vars.$line-height-ultra-tight;
+        letter-spacing: vars.$letter-spacing-heading-xl;
         margin-bottom: 21px;
 
-        @media screen and (max-width: 639px) {
-            font-size: 40px;
+        @include mix.respond-to-mobile {
+            font-size: vars.$font-size-xxl-5;
         }
     }
 
@@ -63,11 +63,11 @@
     &__product {
         gap: 142px;
 
-        @media screen and (max-width: 1023px) {
+        @include mix.respond-to-tablet {
             gap: 40px;
         }
 
-        @media screen and (max-width: 639px) {
+        @include mix.respond-to-mobile {
             flex-direction: column;
             gap: 30px;
         }
@@ -86,12 +86,12 @@
     &__product-title {
         color: vars.$white;
         font-family: vars.$font-family-display;
-        font-size: 50px;
+        font-size: vars.$font-size-xxl-2;
         font-weight: vars.$font-weight-black;
-        line-height: 1.04;
+        line-height: vars.$line-height-title;
         margin: 0 0 18px 0;
 
-        @media screen and (max-width: 639px) {
+        @include mix.respond-to-mobile {
             font-size: 32px;
         }
     }
@@ -101,7 +101,7 @@
         font-family: vars.$font-family-mono;
         font-size: vars.$font-size-md;
         font-weight: vars.$font-weight-regular;
-        line-height: 1.5;
+        line-height: vars.$line-height-base;
         margin: 0;
     }
 
@@ -111,11 +111,10 @@
         }
     }
 
-    // Testimonials
     &__testimonials {
         margin-top: 120px;
 
-        @media screen and (max-width: 639px) {
+        @include mix.respond-to-mobile {
             margin-top: 60px;
         }
     }
@@ -127,7 +126,7 @@
         font-weight: vars.$font-weight-regular;
         margin-bottom: 58px;
 
-        @media screen and (max-width: 639px) {
+        @include mix.respond-to-mobile {
             margin-bottom: 40px;
         }
     }
@@ -135,11 +134,11 @@
     &__testimonials-grid {
         gap: 25px;
 
-        @media screen and (max-width: 1023px) {
+        @include mix.respond-to-tablet {
             flex-wrap: wrap;
         }
 
-        @media screen and (max-width: 639px) {
+        @include mix.respond-to-mobile {
             flex-direction: column;
         }
     }
@@ -148,15 +147,15 @@
         display: flex;
         flex-direction: column;
         background-color: vars.$color-off-white;
-        border-radius: 39px;
+        border-radius: vars.$border-radius-xxxl;
         padding: 28px 21px 19px 28px;
         max-width: 380px;
 
-        @media screen and (max-width: 1023px) {
+        @include mix.respond-to-tablet {
             flex: 1 1 calc(50% - 20px);
         }
 
-        @media screen and (max-width: 639px) {
+        @include mix.respond-to-mobile {
             flex: 1 1 100%;
             max-width: 100%;
         }
@@ -189,7 +188,7 @@
         flex-shrink: 0;
         color: vars.$color-charcoal;
         font-family: vars.$font-family-display;
-        font-size: 24px;
+        font-size: vars.$font-size-xl;
         font-weight: vars.$font-weight-medium;
     }
 
@@ -200,7 +199,7 @@
     &__testimonial-name {
         color: vars.$color-charcoal;
         font-family: vars.$font-family-display;
-        font-size: 15px;
+        font-size: vars.$font-size-tiny;
         font-weight: vars.$font-weight-semibold;
         margin: 0 0 5px 0;
     }

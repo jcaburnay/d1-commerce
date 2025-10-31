@@ -4,7 +4,7 @@
 
 .header {
     background-color: vars.$bg-header;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: vars.$shadow-light;
     height: 65px;
 }
 
@@ -59,7 +59,7 @@
         color: vars.$text-white;
         width: 201px;
         height: 46px;
-        border-radius: 35px;
+        border-radius: vars.$border-radius-xxl;
         font-family: vars.$font-family-mono;
         font-size: vars.$font-size-lg;
         font-weight: vars.$font-weight-regular;

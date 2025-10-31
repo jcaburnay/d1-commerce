@@ -1,3 +1,104 @@
+@use "variables" as vars;
+
+@mixin respond-to-mobile {
+    @media screen and (max-width: 639px) {
+        @content;
+    }
+}
+
+@mixin respond-to-tablet {
+    @media screen and (max-width: 1023px) {
+        @content;
+    }
+}
+
+@mixin respond-to-tablet-only {
+    @media screen and (min-width: 640px) and (max-width: 1023px) {
+        @content;
+    }
+}
+
+@mixin respond-to-desktop {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin container-padding(
+    $desktop-h: 88px,
+    $desktop-v: 80px,
+    $tablet-h: 40px,
+    $tablet-v: 60px,
+    $mobile-h: 20px,
+    $mobile-v: 40px
+) {
+    padding: $desktop-v $desktop-h;
+
+    @include respond-to-tablet {
+        padding: $tablet-v $tablet-h;
+    }
+
+    @include respond-to-mobile {
+        padding: $mobile-v $mobile-h;
+    }
+}
+
+@mixin heading-display(
+    $size,
+    $weight: vars.$font-weight-black,
+    $line-height: vars.$line-height-title,
+    $letter-spacing: vars.$letter-spacing-heading,
+    $responsive-size: null
+) {
+    font-family: vars.$font-family-display;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    margin: 0;
+
+    @if $responsive-size {
+        @include respond-to-mobile {
+            font-size: $responsive-size;
+        }
+    }
+}
+
+@mixin text-body(
+    $size: vars.$font-size-lg,
+    $line-height: vars.$line-height-relaxed
+) {
+    font-family: vars.$font-family-mono;
+    font-size: $size;
+    font-weight: vars.$font-weight-regular;
+    line-height: $line-height;
+}
+
+@mixin button-base(
+    $bg-color,
+    $text-color,
+    $padding: 19px 40px,
+    $radius: vars.$border-radius-xxl
+) {
+    display: inline-block;
+    background-color: $bg-color;
+    color: $text-color;
+    font-family: vars.$font-family-mono;
+    font-size: vars.$font-size-lg;
+    font-weight: vars.$font-weight-regular;
+    padding: $padding;
+    border: none;
+    border-radius: $radius;
+    cursor: pointer;
+    transition: vars.$transition-base;
+    text-decoration: none;
+    text-align: center;
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
 @mixin respond-to($breakpoint) {
   @if $breakpoint == 'medium' {
     @media (min-width: 640px) { @content; }

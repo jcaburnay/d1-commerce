@@ -16,7 +16,7 @@
     align-items: center;
     position: relative;
 
-    @media screen and (min-width: 640px) and (max-width: 1023px) {
+    @include mix.respond-to-tablet-only {
         height: auto;
         min-height: 600px;
         padding: 30px 40px;
@@ -24,7 +24,7 @@
         justify-content: flex-start;
     }
 
-    @media screen and (max-width: 639px) {
+    @include mix.respond-to-mobile {
         height: auto;
         padding: 40px 20px;
         flex-direction: column;
@@ -38,20 +38,20 @@
         font-family: vars.$font-family-display;
         font-size: vars.$font-size-xxl;
         font-weight: vars.$font-weight-black;
-        letter-spacing: -1.07px;
+        letter-spacing: vars.$letter-spacing-heading-lg;
         line-height: 0.859;
         margin: 0 0 19px 0;
 
-        @media screen and (min-width: 640px) and (max-width: 1023px) {
+        @include mix.respond-to-tablet-only {
             width: 100%;
             height: auto;
-            font-size: 42px;
+            font-size: vars.$font-size-xxl-4;
             line-height: 1.1;
             margin: 0 0 12px 0;
             text-align: center;
         }
 
-        @media screen and (max-width: 639px) {
+        @include mix.respond-to-mobile {
             width: 100%;
             height: auto;
             font-size: 32px;
@@ -66,13 +66,13 @@
         line-height: 1.33;
         margin: 0 0 21px 0;
 
-        @media screen and (min-width: 640px) and (max-width: 1023px) {
+        @include mix.respond-to-tablet-only {
             font-size: vars.$font-size-md;
             margin: 0 0 12px 0;
             text-align: center;
         }
 
-        @media screen and (max-width: 639px) {
+        @include mix.respond-to-mobile {
             font-size: vars.$font-size-sm;
             margin: 0 0 16px 0;
         }
@@ -83,7 +83,7 @@
         color: vars.$color-dark-gray;
         width: 314px;
         height: 56px;
-        border-radius: 35px;
+        border-radius: vars.$border-radius-xxl;
         font-family: vars.$font-family-mono;
         font-size: vars.$font-size-lg;
         font-weight: vars.$font-weight-regular;
@@ -95,7 +95,7 @@
         transition: vars.$transition-base;
         margin-bottom: 173px;
 
-        @media screen and (max-width: 1023px) {
+        @include mix.respond-to-tablet {
             width: 100%;
             max-width: 280px;
             height: 48px;
@@ -116,26 +116,26 @@
         z-index: 2;
         flex: 0 0 auto;
 
-        @media screen and (min-width: 640px) and (max-width: 1023px) {
+        @include mix.respond-to-tablet-only {
             order: 1;
             width: 100%;
             align-items: center;
         }
 
-        @media screen and (max-width: 639px) {
+        @include mix.respond-to-mobile {
             order: 1;
             width: 100%;
         }
     }
 
     &__review {
-        @media screen and (min-width: 640px) and (max-width: 1023px) {
+        @include mix.respond-to-tablet-only {
             order: 3;
             width: 100%;
             margin-top: 15px;
         }
 
-        @media screen and (max-width: 639px) {
+        @include mix.respond-to-mobile {
             order: 3;
             width: 100%;
             margin-top: 30px;
@@ -146,7 +146,7 @@
         width: 331px;
         height: 138px;
 
-        @media screen and (max-width: 1023px) {
+        @include mix.respond-to-tablet {
             width: 100%;
             height: auto;
         }
@@ -202,7 +202,7 @@
         width: 612px;
         height: 617px;
 
-        @media screen and (min-width: 640px) and (max-width: 1023px) {
+        @include mix.respond-to-tablet-only {
             position: static;
             transform: none;
             width: 100%;
@@ -212,7 +212,7 @@
             margin: 15px 0 0 0;
         }
 
-        @media screen and (max-width: 639px) {
+        @include mix.respond-to-mobile {
             position: static;
             transform: none;
             width: 100%;
@@ -229,7 +229,7 @@
         height: 100%;
         object-fit: contain;
 
-        @media screen and (max-width: 639px) {
+        @include mix.respond-to-mobile {
             object-fit: contain;
             max-height: 400px;
         }

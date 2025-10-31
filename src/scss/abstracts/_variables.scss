@@ -11,10 +11,20 @@ $color-charcoal: #2e302e;
 $color-slate-blue: rgba(70, 78, 112, 1);
 $color-deep-teal: rgba(32, 55, 70, 1);
 
+$color-border-slate: #464f6e;
+$color-border-gray: #979797;
+$color-border-teal-light: rgba(29, 60, 52, 0.1);
+$color-border-navy-light: rgba(0, 38, 87, 0.1);
+
 $white: #ffffff;
 $color-off-white: #fffaf6;
 $color-mint-light: #f5feff;
 $color-ice-blue: #eff7fa;
+
+$color-white-overlay: rgba(255, 255, 255, 0.5);
+$color-white-border-thin: rgba(255, 255, 255, 0.1);
+$color-white-border-medium: rgba(255, 255, 255, 0.2);
+$color-white-border-thick: rgba(255, 255, 255, 0.3);
 
 $black: #000000;
 $gray-light: #f8f9fa;
@@ -41,6 +51,15 @@ $font-size-md: 16px;
 $font-size-lg: 18px;
 $font-size-xl: 24px;
 $font-size-xxl: 64px;
+$font-size-xxxl: 80px;
+$font-size-xxl-2: 50px;
+$font-size-xxl-3: 48px;
+$font-size-xxl-4: 42px;
+$font-size-xxl-5: 40px;
+$font-size-xxs: 20px;
+$font-size-tiny: 15px;
+$font-size-nano: 11px;
+$font-size-md-alt: 21px;
 
 $font-weight-regular: 400;
 $font-weight-medium: 500;
@@ -51,10 +70,18 @@ $font-weight-black: 900;
 $line-height-base: 1.5;
 $line-height-tight: 1.2;
 $line-height-loose: 1.75;
+$line-height-relaxed: 1.33;
+$line-height-title: 1.04;
+$line-height-tight-alt: 0.9;
+$line-height-ultra-tight: 0.65;
 
 $letter-spacing-tight: -0.02em;
 $letter-spacing-normal: 0;
 $letter-spacing-wide: 0.05em;
+$letter-spacing-heading: -0.83px;
+$letter-spacing-heading-lg: -1.07px;
+$letter-spacing-heading-xl: -1.33px;
+$letter-spacing-title: -0.3px;
 
 $spacer: 1rem;
 $spacing-sm: $spacer * 0.5;
@@ -65,5 +92,15 @@ $spacing-xl: $spacer * 4;
 $border-radius: 0.25rem;
 $border-radius-full: 50px;
 $border-color: #dee2e6;
+$border-radius-sm: 10px;
+$border-radius-md: 25px;
+$border-radius-lg: 28.5px;
+$border-radius-xl: 30px;
+$border-radius-xxl: 35px;
+$border-radius-xxxl: 39px;
+$border-radius-max: 50px;
+
+$shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
+$shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.15);
 
 $transition-base: all 0.3s ease;
